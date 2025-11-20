@@ -1,0 +1,65 @@
+name: Milestone Creation
+description: Request the creation of a new Milestone for Azure Observability Accelerator
+title: "[Milestone]: "
+labels:
+  - question
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: "## Milestone Creation Request\n\nPlease fill out the details below to propose a new milestone."
+  - type: input
+    id: milestone-name
+    attributes:
+      label: Milestone Name
+      description: Provide a short, descriptive name for the milestone (e.g., 'v1.0 Release', 'Logging Improvements').
+      placeholder: Milestone name here
+    validations:
+      required: true
+  - type: textarea
+    id: milestone-description
+    attributes:
+      label: Milestone Description
+      description: Give a brief overview of what this milestone represents and its goals.
+      placeholder: What is the focus of this milestone?
+    validations:
+      required: true
+  - type: input
+    id: milestone-due-date
+    attributes:
+      label: Target Due Date
+      description: Desired completion date for the milestone (YYYY-MM-DD).
+      placeholder: 2025-12-31
+    validations:
+      required: false
+  - type: textarea
+    id: milestone-issues
+    attributes:
+      label: Related Issues/PRs
+      description: List any existing issues or pull requests that should be associated with this milestone.
+      placeholder: Reference issue numbers or URLs
+    validations:
+      required: false
+  - type: dropdown
+    id: milestone-priority
+    attributes:
+      label: Priority
+      description: How important is this milestone?
+      options:
+        - ""
+        - "Low"
+        - "Medium"
+        - "High"
+    validations:
+      required: true
+  - type: textarea
+    id: milestone-notes
+    attributes:
+      label: Additional Notes
+      description: Any other context or comments about this milestone.
+      placeholder: Additional notes or context
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "---\n\nA maintainer will review your milestone request and notify you of any updates or required clarification."
