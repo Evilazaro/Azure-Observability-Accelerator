@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 Documentation
+    url: https://github.com/Evilazaro/Azure-Observability-Accelerator/wiki
+    about: Check out the documentation for guides and resources
+  - name: 💬 Discussions
+    url: https://github.com/Evilazaro/Azure-Observability-Accelerator/discussions
+    about: Ask questions and discuss ideas with the community
+  - name: 🐛 Bug Report
+    url: https://github.com/Evilazaro/Azure-Observability-Accelerator/issues/new/choose
+    about: Report a bug or issue with the Azure Observability Accelerator
