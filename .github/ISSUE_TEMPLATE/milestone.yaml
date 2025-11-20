@@ -1,0 +1,61 @@
+name: Milestone Planning
+description: Create a milestone tracking issue for release planning
+title: "[Milestone]: "
+labels: ["milestone", "planning"]
+assignees: ["Evilazaro"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Milestone Planning 📋
+        
+        Use this template to plan and track work for a specific milestone or release.
+
+  - type: input
+    id: milestone-name
+    attributes:
+      label: Milestone Name
+      description: Name of the milestone (e.g., v1.0, Q1 2025)
+      placeholder: "v1.0"
+    validations:
+      required: true
+
+  - type: input
+    id: target-date
+    attributes:
+      label: Target Release Date
+      description: Expected completion date
+      placeholder: "2025-12-31"
+    validations:
+      required: true
+
+  - type: textarea
+    id: objectives
+    attributes:
+      label: Milestone Objectives
+      description: What are the main goals for this milestone?
+      placeholder: "List the key objectives and deliverables..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: features
+    attributes:
+      label: Planned Features
+      description: List the features planned for this milestone
+      placeholder: |
+        - [ ] Feature 1
+        - [ ] Feature 2
+        - [ ] Feature 3
+    validations:
+      required: false
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Any dependencies or blockers?
+      placeholder: "List any dependencies..."
+    validations:
+      required: false
