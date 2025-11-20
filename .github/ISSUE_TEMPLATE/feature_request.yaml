@@ -1,0 +1,127 @@
+name: Feature Request
+description: Suggest an idea or new feature for the Azure Observability Accelerator
+title: "[Feature Request]: "
+labels: ["enhancement", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thank you for suggesting a feature! 🚀
+        
+        We appreciate your interest in improving the Azure Observability Accelerator. Please fill out the following sections to help us understand your feature request.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please confirm the following before submitting your feature request
+      options:
+        - label: I have searched existing issues to ensure this feature hasn't already been requested
+          required: true
+        - label: I have checked the project documentation and this feature doesn't already exist
+          required: true
+
+  - type: textarea
+    id: problem-description
+    attributes:
+      label: Is your feature request related to a problem?
+      description: A clear and concise description of what the problem is.
+      placeholder: "Ex. I'm always frustrated when..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Describe the solution you'd like
+      description: A clear and concise description of what you want to happen.
+      placeholder: "I would like to see..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Describe alternatives you've considered
+      description: A clear and concise description of any alternative solutions or features you've considered.
+      placeholder: "Alternative approaches could include..."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: feature-area
+    attributes:
+      label: Feature Area
+      description: Which area of the Azure Observability Accelerator does this feature relate to?
+      options:
+        - Monitoring & Metrics
+        - Logging & Tracing
+        - Alerting & Notifications
+        - Dashboards & Visualization
+        - Configuration & Setup
+        - Documentation
+        - Integration & Connectors
+        - Performance & Optimization
+        - Security & Compliance
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature to you?
+      options:
+        - Low - Nice to have
+        - Medium - Would improve my workflow
+        - High - Critical for my use case
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: |
+        Add any other context, screenshots, code examples, or links about the feature request here.
+        
+        Tip: You can attach images by clicking this area to highlight it and then dragging files in.
+      placeholder: "Additional details, screenshots, or examples..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: benefits
+    attributes:
+      label: Expected Benefits
+      description: How would this feature benefit you and other users of the Azure Observability Accelerator?
+      placeholder: "This feature would help by..."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Would you like to work on this feature?
+      description: Let us know if you're interested in contributing to implement this feature
+      options:
+        - label: Yes, I'd like to work on this feature
+        - label: I would need help getting started
+        - label: I'm just suggesting the idea for someone else to implement
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        
+        ### What happens next?
+        
+        1. A maintainer will review your feature request and add appropriate labels
+        2. The community can discuss and provide feedback on your suggestion
+        3. If approved, the feature will be prioritized in the project roadmap
+        4. Contributors can volunteer to implement the feature
+        
+        Thank you for helping make the Azure Observability Accelerator better! 💙
